@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 既知の制限
+    url: https://github.com/kadaiyare/Izuna-releases/blob/main/KNOWN_ISSUES.md
+    about: 報告する前に既知の不具合を確認してください
+  - name: セキュリティ問題の非公開報告
+    url: https://github.com/kadaiyare/Izuna-releases/security/advisories/new
+    about: 脆弱性や認証情報を公開Issueへ投稿しないでください

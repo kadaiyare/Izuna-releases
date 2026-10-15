@@ -1,0 +1,45 @@
+name: 不具合報告
+description: 再現手順と端末情報を共有してください
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "既知の制限を確認してください。認証トークン、個人の曲一覧、端末識別番号を投稿せず、セキュリティの問題は非公開報告を利用してください。"
+  - type: input
+    id: version
+    attributes:
+      label: Izunaのバージョン
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Androidのバージョンと端末モデル
+      placeholder: "Android 16 / 端末モデル"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 操作した順番を記載してください
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した動作
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 補足
+      description: 外部連携のオン・オフや、個人情報を除いたスクリーンショットなど

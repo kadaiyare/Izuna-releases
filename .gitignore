@@ -1,0 +1,9 @@
+*.apk
+*.aar
+*.zip
+*.jks
+*.keystore
+*.p12
+local.properties
+build/
+.release/
