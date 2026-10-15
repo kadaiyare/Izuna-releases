@@ -4,7 +4,7 @@
 
 アルバムやアーティストから曲を探し、黒を基調とした画面で音楽を聴けます。ローカル再生にアカウントは不要です。歌詞取得や再生情報の共有は、必要な機能だけを設定から有効にできます。
 
-このリポジトリはIzunaのAPK・利用ガイド・ソースコード・不具合報告の公開窓口です。現在は**v0.1.1 Beta**の署名・検査を進めています。
+このリポジトリはIzunaのAPK・利用ガイド・ソースコード・不具合報告の公開窓口です。現在は**v0.1.1 Beta**を配布しています。
 
 [APKをダウンロード](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.1) · [使い方](docs/usage.md) · [プライバシー](PRIVACY.md) · [既知の制限](KNOWN_ISSUES.md) · [不具合を報告](https://github.com/kadaiyare/Izuna-releases/issues/new/choose)
 

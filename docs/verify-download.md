@@ -10,7 +10,11 @@ Windows PowerShellの例です。
 Get-FileHash ./Izuna-0.1.1.apk -Algorithm SHA256
 ```
 
-APKのSHA-256は各ReleaseのSHA256SUMS.txtへ記載します。
+v0.1.1 APKのSHA-256:
+
+```text
+ca56f1a345390dd6851b495b530a833433da8aa55e2a4bb332bab75bff19a331
+```
 
 SHA256SUMS.txtのAPK行と照合します。Linuxでは `sha256sum -c SHA256SUMS.txt` で添付ファイルを一括確認できます。
 
