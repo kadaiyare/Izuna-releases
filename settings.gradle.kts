@@ -25,7 +25,3 @@ dependencyResolutionManagement {
 rootProject.name = "Izuna"
 include(":app")
 include(":discord-runtime")
-// The preflight app is independent from Izuna and opt-in for ordinary builds.
-if (providers.gradleProperty("includeDiscordProbe").orNull == "true") {
-    include(":discord-probe")
-}

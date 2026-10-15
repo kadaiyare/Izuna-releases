@@ -15,21 +15,20 @@ discord.applicationId=自分のApplicationの数字ID
 discord.sdkVersion=1.10.19337
 ```
 
-SDKは提供元の利用条件に従って取得してください。本体も検証アプリもAARが必要です。SHA-256を.github/discord-sdk.jsonと照合します。Last.fm開発用のAPI情報は任意で、releaseへ継承しません。
+SDKは提供元の利用条件に従って取得してください。本体のビルドにはAARが必要です。SHA-256を.github/discord-sdk.jsonと照合します。Last.fm開発用のAPI情報は任意で、releaseへ継承しません。
 
-## 通常のビルドとテスト
+## 通常のビルド
 
 Windows PowerShellではJAVA_HOMEとANDROID_HOMEを環境に合わせて指定し、次を実行します。
 
 ```powershell
 . ./tools/dev-env.ps1
-./gradlew.bat :app:assembleDebug :app:testDebugUnitTest :app:lintDebug
-python -m unittest discover -s tools -p 'test_*.py'
+./gradlew.bat :app:assembleDebug :app:lintDebug
 ```
 
 LinuxなどではJDK・SDKの環境変数を設定し、gradlewを使用します。debug APKはapp/build/outputs/apk/debug/app-debug.apkです。独自debug署名は配布版と異なるため、既存配布版へ上書きできません。
 
-Android 16以上の検証専用端末では `:app:connectedDebugAndroidTest` を実行できます。テストは合成音源と模擬APIを使用し、実サービス照会・プロフィール表示のテストは既定でスキップします。明示フラグを指定する前に送信内容と対象を確認してください。
+自動テスト、独立した検証アプリ、テスト音源生成ツールは非公開の開発リポジトリで管理します。この公開リポジトリには含めません。配布版のテストは非公開側のリリース工程で実行します。
 
 ## Discord SDK検査
 
@@ -37,7 +36,7 @@ Android 16以上の検証専用端末では `:app:connectedDebugAndroidTest` を
 python tools/check_discord_sdk.py vendor/discord/discord_partner_sdk.aar --sdk-version 1.10.19337
 ```
 
-現行AARには既知の16 KB RELRO終端不一致があり、厳密検査は失敗します。条件を緩めて成功扱いにしないでください。独立した検証アプリは `-PincludeDiscordProbe=true` で含め、16 KB診断debugだけに `-PdiagnoseDiscord16kb=true` を指定します。検証アプリのreleaseは厳密検査で停止します。
+現行AARには既知の16 KB RELRO終端不一致があり、厳密検査は失敗します。条件を緩めて成功扱いにしないでください。
 
 ## 署名と秘密情報
 

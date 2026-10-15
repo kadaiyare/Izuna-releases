@@ -25,3 +25,12 @@ local.properties
 *.apk
 *.aar
 *.zip
+
+# Tests and diagnostics are maintained in the private development repository.
+**/src/test/
+**/src/androidTest/
+**/src/testFixtures/
+/discord-probe/
+/tools/test_*.py
+/tools/generate_device_flac.py
+/tools/generate_test_flac.py
