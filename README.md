@@ -4,9 +4,9 @@
 
 アルバムやアーティストから曲を探し、黒を基調とした画面で音楽を聴けます。ローカル再生にアカウントは不要です。歌詞取得や再生情報の共有は、必要な機能だけを設定から有効にできます。
 
-このリポジトリはIzunaのAPK・利用ガイド・不具合報告の公開窓口です。アプリのソースコードは非公開で管理しています。現在は**v0.1.0 Beta**を配布しています。
+このリポジトリはIzunaのAPK・利用ガイド・ソースコード・不具合報告の公開窓口です。現在は**v0.1.1 Beta**の署名・検査を進めています。
 
-[APKをダウンロード](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.0) · [使い方](docs/usage.md) · [プライバシー](PRIVACY.md) · [既知の制限](KNOWN_ISSUES.md) · [不具合を報告](https://github.com/kadaiyare/Izuna-releases/issues/new/choose)
+[APKをダウンロード](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.1) · [使い方](docs/usage.md) · [プライバシー](PRIVACY.md) · [既知の制限](KNOWN_ISSUES.md) · [不具合を報告](https://github.com/kadaiyare/Izuna-releases/issues/new/choose)
 
 ## 主な機能
 
@@ -29,7 +29,7 @@
 
 ## インストール
 
-1. [v0.1.0 Beta](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.0)から `Izuna-0.1.0.apk` をダウンロードします。
+1. [v0.1.1 Beta](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.1)から `Izuna-0.1.1.apk` をダウンロードします。
 2. AndroidでAPKを開き、必要に応じて使用したブラウザ・ファイルアプリからのインストールを許可します。
 3. Izunaを起動して音楽へのアクセスを許可します。見つからない曲は設定から再スキャンします。
 
@@ -45,10 +45,10 @@
 
 ## Betaについて
 
-Discordの古い活動表示が停止後も残る場合があります。同梱SDKの16 KB静的検査は一部未通過で、16 KB ARM64実機は未確認です。ListenBrainzの実サーバー受付も未確認です。v0.1.0ではLast.fm、EQ・左右バランス・Convolutionを利用できません。詳しくは[既知の制限](KNOWN_ISSUES.md)を確認してください。
+Discordの古い活動表示が停止後も残る場合があります。同梱SDKの16 KB静的検査は一部未通過で、16 KB ARM64実機は未確認です。ListenBrainzの実サーバー受付も未確認です。v0.1.1ではLast.fm、EQ・左右バランス・Convolutionを利用できません。詳しくは[既知の制限](KNOWN_ISSUES.md)を確認してください。
 
-初期配布APKの設定画面・DiscordのGitHubボタンは旧開発リポジトリURLを指し、一般利用者には開けない場合があります。ダウンロードと不具合報告にはこの公開リポジトリを利用してください。
+設定画面とDiscordのGitHubボタンはこの公開リポジトリを開きます。
 
-[利用ガイド](docs/README.md) · [配布と権利表示](NOTICE.md) · [セキュリティ報告](SECURITY.md)
+[ソースとビルド元](SOURCE.md) · [ビルド手順](docs/build.md) · [利用ガイド](docs/README.md) · [配布と権利表示](NOTICE.md) · [セキュリティ報告](SECURITY.md)
 
 Izuna by [kadaiyare](https://github.com/kadaiyare) · © 2026 kadaiyare

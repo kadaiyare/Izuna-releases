@@ -1,7 +1,7 @@
 # ListenBrainz互換サーバー
 
 ユーザーがAPI URLとトークンを指定し、ListenBrainzまたは同じAPIを実装したサーバーへ再生情報を送る。
-現在設定できる互換サーバーは1つ。v0.1.0の配布版ではLast.fmは未設定だが、ListenBrainz互換送信は利用できる。
+現在設定できる互換サーバーは1つ。v0.1.1の配布版ではLast.fmは未設定だが、ListenBrainz互換送信は利用できる。
 
 ## 接続する
 

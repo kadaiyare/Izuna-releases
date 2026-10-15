@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preserve the supplied PNG. Center its visible bounds inside the 66 dp safe zone
+     of a 108 dp adaptive layer; fractions scale with launcher and splash sizing. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="2.832%"
+    android:insetRight="11.983%"
+    android:insetTop="9.404%"
+    android:insetBottom="5.411%">
+    <bitmap
+        android:src="@drawable/izuna_logo"
+        android:gravity="fill"
+        android:filter="true" />
+</inset>

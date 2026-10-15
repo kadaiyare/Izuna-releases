@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(izuna_discord_runtime LANGUAGES CXX)
+find_package(discord_partner_sdk REQUIRED CONFIG)
+add_library(izuna_discord_runtime SHARED runtime.cpp)
+target_compile_features(izuna_discord_runtime PRIVATE cxx_std_20)
+target_link_libraries(izuna_discord_runtime PRIVATE discord_partner_sdk::discord_partner_sdk)
+target_link_options(izuna_discord_runtime PRIVATE "-Wl,-z,max-page-size=16384" "-Wl,-z,common-page-size=16384")

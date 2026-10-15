@@ -16,7 +16,7 @@
 
 ## GitHubボタン
 
-カスタムボタンは他のユーザーから見たプロフィールに表示され、自分の表示では確認できません。v0.1.0のボタンは旧開発リポジトリを指すため、一般利用者には開けない場合があります。公開配布先は[Izuna-releases](https://github.com/kadaiyare/Izuna-releases)です。
+カスタムボタンは他のユーザーから見たプロフィールに表示され、自分の表示では確認できません。v0.1.1のボタンが開く公開先は[Izuna-releases](https://github.com/kadaiyare/Izuna-releases)です。
 
 ## 公開カバー
 
