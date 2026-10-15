@@ -7,13 +7,13 @@ ReleaseからAPK、SHA256SUMS.txt、SIGNING-CERT-SHA256.txtを取得します。
 Windows PowerShellの例です。
 
 ```powershell
-Get-FileHash ./Izuna-0.1.1.apk -Algorithm SHA256
+Get-FileHash ./Izuna-0.1.2.apk -Algorithm SHA256
 ```
 
-v0.1.1 APKのSHA-256:
+v0.1.2 APKのSHA-256:
 
 ```text
-ca56f1a345390dd6851b495b530a833433da8aa55e2a4bb332bab75bff19a331
+71e26e21680bfa48942bab7f830c3701d9e8912357c7654820c2126d21af9998
 ```
 
 SHA256SUMS.txtのAPK行と照合します。Linuxでは `sha256sum -c SHA256SUMS.txt` で添付ファイルを一括確認できます。
@@ -23,7 +23,7 @@ SHA256SUMS.txtのAPK行と照合します。Linuxでは `sha256sum -c SHA256SUMS
 Android SDK Build Toolsのapksignerがある場合は次を実行します。
 
 ```text
-apksigner verify --verbose --print-certs Izuna-0.1.1.apk
+apksigner verify --verbose --print-certs Izuna-0.1.2.apk
 ```
 
 配布証明書のSHA-256:

@@ -29,8 +29,8 @@ android {
         applicationId = "com.kadaiyare.izuna"
         minSdk = 36
         targetSdk = 37
-        versionCode = 3
-        versionName = "0.1.1"
+        versionCode = 4
+        versionName = "0.1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // Distribution artifacts must never inherit developer credentials from local.properties.
@@ -60,8 +60,9 @@ android {
             isDebuggable = false
             if (!releaseKeyPath.isNullOrBlank()) signingConfig = signingConfigs.getByName("distribution")
             optimization {
-                enable = true
-                packageScope = setOf("androidx.**", "kotlin.**", "kotlinx.**")
+                // Scoped R8 rewrites Kotlin sequence visibility and crashes on cold start.
+                // Re-enable only after testing the resulting release APK on a device.
+                enable = false
             }
         }
     }

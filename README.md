@@ -4,9 +4,9 @@
 
 アルバムやアーティストから曲を探し、黒を基調とした画面で音楽を聴けます。ローカル再生にアカウントは不要です。歌詞取得や再生情報の共有は、必要な機能だけを設定から有効にできます。
 
-このリポジトリはIzunaのAPK・利用ガイド・ソースコード・不具合報告の公開窓口です。現在は**v0.1.1 Beta**を配布しています。
+このリポジトリはIzunaのAPK・利用ガイド・ソースコード・不具合報告の公開窓口です。現在は**v0.1.2 Beta**を配布しています。
 
-[APKをダウンロード](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.1) · [使い方](docs/usage.md) · [プライバシー](PRIVACY.md) · [既知の制限](KNOWN_ISSUES.md) · [不具合を報告](https://github.com/kadaiyare/Izuna-releases/issues/new/choose)
+[APKをダウンロード](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.2) · [使い方](docs/usage.md) · [プライバシー](PRIVACY.md) · [既知の制限](KNOWN_ISSUES.md) · [不具合を報告](https://github.com/kadaiyare/Izuna-releases/issues/new/choose)
 
 ## 主な機能
 
@@ -29,9 +29,11 @@
 
 ## インストール
 
-1. [v0.1.1 Beta](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.1)から `Izuna-0.1.1.apk` をダウンロードします。
+1. [v0.1.2 Beta](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.2)から `Izuna-0.1.2.apk` をダウンロードします。
 2. AndroidでAPKを開き、必要に応じて使用したブラウザ・ファイルアプリからのインストールを許可します。
 3. Izunaを起動して音楽へのアクセスを許可します。見つからない曲は設定から再スキャンします。
+
+v0.1.1で起動直後に終了する問題はv0.1.2で修正しました。アンインストールせず、そのまま上書き更新してください。
 
 チェックサムと署名証明書の確認方法は[ダウンロード検証](docs/verify-download.md)を参照してください。同じ配布署名の版は上書き更新できます。開発用debug版とは署名が異なり、そのまま上書きできません。アンインストールすると履歴・プレイリスト・設定などのアプリ内データも失われます。自動データ移行・エクスポートは未対応です。
 
@@ -45,7 +47,7 @@
 
 ## Betaについて
 
-Discordの古い活動表示が停止後も残る場合があります。同梱SDKの16 KB静的検査は一部未通過で、16 KB ARM64実機は未確認です。ListenBrainzの実サーバー受付も未確認です。v0.1.1ではLast.fm、EQ・左右バランス・Convolutionを利用できません。詳しくは[既知の制限](KNOWN_ISSUES.md)を確認してください。
+Discordの古い活動表示が停止後も残る場合があります。同梱SDKの16 KB静的検査は一部未通過で、16 KB ARM64実機は未確認です。ListenBrainzの実サーバー受付も未確認です。v0.1.2ではLast.fm、EQ・左右バランス・Convolutionを利用できません。詳しくは[既知の制限](KNOWN_ISSUES.md)を確認してください。
 
 設定画面とDiscordのGitHubボタンはこの公開リポジトリを開きます。
 
