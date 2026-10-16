@@ -22,8 +22,8 @@ def main():
     shutil.copyfile(root / "app/build/outputs/apk/release/app-release.apk", destination / f"Izuna-{version}.apk")
     shutil.copyfile(root / "app/build/reports/release-dependencies.txt", destination / "DEPENDENCIES.txt")
     shutil.copyfile(root / ".github/signing-cert-sha256.txt", destination / "SIGNING-CERT-SHA256.txt")
-    shutil.copyfile(root / "PRIVACY.md", destination / "PRIVACY.md")
-    shutil.copyfile(root / "releases" / f"v{version}.md", destination / "RELEASE_NOTES.md")
+    shutil.copyfile(root / "docs/PRIVACY.md", destination / "PRIVACY.md")
+    shutil.copyfile(root / "docs/releases" / f"v{version}.md", destination / "RELEASE_NOTES.md")
     for report in ("apk-audit.json", "source-dependency-audit.json"):
         source = root / "build/release-check" / report
         data = json.loads(source.read_text())

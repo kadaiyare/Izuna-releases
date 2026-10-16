@@ -21,7 +21,7 @@ def main():
     if not all(env.get(name) for name in ("ANDROID_KEYSTORE_PATH", "ANDROID_KEYSTORE_PASSWORD", "ANDROID_KEY_ALIAS", "ANDROID_KEY_PASSWORD")):
         raise SystemExit("Release signing is not configured; an unsigned or debug-signed APK must not be distributed")
     wrapper = [str(root / "gradlew.bat")] if os.name == "nt" else ["bash", str(root / "gradlew")]
-    return subprocess.call(wrapper + [":app:assembleRelease", ":app:lintRelease",
+    return subprocess.call(wrapper + [":app:assembleRelease", ":app:lintRelease", ":app:testDebugUnitTest",
                                       ":app:releaseDependencyInventory", "--no-configuration-cache", "--console=plain"],
                            cwd=root, env=env)
 

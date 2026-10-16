@@ -4,9 +4,9 @@
 
 アルバムやアーティストから曲を探し、黒を基調とした画面で音楽を聴けます。ローカル再生にアカウントは不要です。歌詞取得や再生情報の共有は、必要な機能だけを設定から有効にできます。
 
-このリポジトリはIzunaのAPK・利用ガイド・ソースコード・不具合報告の公開窓口です。現在は**v0.1.2 Beta**を配布しています。
+このリポジトリはIzunaのAPK・利用ガイド・ソースコード・不具合報告の公開窓口です。配布済みの版とダウンロードはReleasesを確認してください。
 
-[APKをダウンロード](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.2) · [使い方](docs/usage.md) · [プライバシー](PRIVACY.md) · [既知の制限](KNOWN_ISSUES.md) · [不具合を報告](https://github.com/kadaiyare/Izuna-releases/issues/new/choose)
+[APKをダウンロード](https://github.com/kadaiyare/Izuna-releases/releases) · [使い方](docs/usage.md) · [プライバシー](PRIVACY.md) · [既知の制限](KNOWN_ISSUES.md) · [不具合を報告](https://github.com/kadaiyare/Izuna-releases/issues/new/choose)
 
 ## 主な機能
 
@@ -29,7 +29,7 @@
 
 ## インストール
 
-1. [v0.1.2 Beta](https://github.com/kadaiyare/Izuna-releases/releases/tag/v0.1.2)から `Izuna-0.1.2.apk` をダウンロードします。
+1. [公開Release](https://github.com/kadaiyare/Izuna-releases/releases)から `Izuna-<バージョン>.apk` をダウンロードします。
 2. AndroidでAPKを開き、必要に応じて使用したブラウザ・ファイルアプリからのインストールを許可します。
 3. Izunaを起動して音楽へのアクセスを許可します。見つからない曲は設定から再スキャンします。
 
